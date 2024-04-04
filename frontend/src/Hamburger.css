@@ -1,0 +1,25 @@
+.hamburgeropen{
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.first-bar, .middle-bar, .last-bar{
+    width: 2rem;
+    height: 0.25rem;
+     background-color: white;
+    /* transition: all 0.3s linear;  */
+}
+.hamburgerclose .first-bar {
+    transform: rotate(-45deg) translate(0px, 5px);
+  }
+  
+  .hamburgerclose .middle-bar {
+    opacity: 0;
+  }
+  
+  .hamburgerclose .last-bar {
+    transform: rotate(45deg) translate(0px, -5px);
+  }
